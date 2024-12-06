@@ -8,9 +8,14 @@ int main(){
     v.push_back(23);
     v.push_back(93);
     v.push_back(29);
-    v.push_back(3);
+    v.push_back(29);
     v.push_back(19);
     
+    int a,b;
+    a = find(v.begin(),v.end(),23) - v.begin();
+    b = (v.size() - 1) - (find(v.rbegin(),v.rend(),29) - v.rbegin());
+    cout<<b - a - 1;
+
     // v.erase(v.begin()+1);
     // cout<<"Size : "<<v.size()<<endl;
     // cout<<"Capacity : "<<v.capacity()<<endl;
